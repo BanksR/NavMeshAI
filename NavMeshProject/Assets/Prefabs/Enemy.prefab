@@ -436,10 +436,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   exhaustParticles: {fileID: 198969855175545734}
-  particleRate: 10
+  particleRate: 5
   distanceText: {fileID: 0}
   distToPlayer: {fileID: 0}
-  playerPos: {fileID: 0}
 --- !u!195 &195437303282170260
 NavMeshAgent:
   m_ObjectHideFlags: 1

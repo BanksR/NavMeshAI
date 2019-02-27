@@ -8,19 +8,22 @@ public class EnemyTank : MonoBehaviour
 
 
 {
+    [Header ("Nav Mesh")]
     private NavMeshAgent _navMesh;
     private NavMeshPath _navPath;
 
+    [Header ("Particle Stuff")]
     public ParticleSystem exhaustParticles;
     public float particleRate = 10f;
 
     private GameObject[] _waypoints;
     private int _currentWP = 0;
 
+    [Header ("UI Helpers")]
     public Text distanceText;
     public Text distToPlayer;
 
-    public Transform playerPos;
+    private Transform playerPos;
 
     private Ray posToPlayer;
 

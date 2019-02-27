@@ -278,7 +278,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1006419630535878}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -2.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4311386721715814}
@@ -453,7 +453,7 @@ MonoBehaviour:
   rotateSpeed: 2
   speed: 600
   _exhaustParts: {fileID: 198466538729870240}
-  particleAmount: 10
+  particleAmount: 5
 --- !u!198 &198340008165712242
 ParticleSystem:
   m_ObjectHideFlags: 1
