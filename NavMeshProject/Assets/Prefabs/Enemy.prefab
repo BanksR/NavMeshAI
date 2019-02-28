@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114288774847228912}
   - component: {fileID: 195437303282170260}
   - component: {fileID: 54203557410384884}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 4504652449983684}
   - component: {fileID: 33719909775765860}
   - component: {fileID: 23694726641730956}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: darker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 4920040272356888}
   - component: {fileID: 33020180085040370}
   - component: {fileID: 23139062378483770}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4657371788024314}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4226426636861306}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 4033046761439448}
   - component: {fileID: 198404698998151192}
   - component: {fileID: 199188231225653154}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particle System (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 4990070992763954}
   - component: {fileID: 198969855175545734}
   - component: {fileID: 199433321421424820}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DustParticles (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 4648223963103700}
   - component: {fileID: 198146125417264070}
   - component: {fileID: 199390709183546596}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 4861779120289076}
   - component: {fileID: 33358147345350214}
   - component: {fileID: 23192900987930356}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -458,7 +458,7 @@ MonoBehaviour:
   distToPlayer: {fileID: 0}
   playerLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 2560
 --- !u!195 &195437303282170260
 NavMeshAgent:
   m_ObjectHideFlags: 1
@@ -467,7 +467,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1146040559643974}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 1.41
+  m_Radius: 1.15
   m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50

@@ -60,42 +60,34 @@ public class EnemyTank : MonoBehaviour
         posToPlayer = new Ray(transform.position, playerPos.position - transform.position);
         float range = Vector3.Distance(transform.position, playerPos.position);
 
-        
-        if (Physics.Raycast(posToPlayer, out hit))
+
+        if (Physics.Raycast(posToPlayer, out hit, playerLayer))
         {
-            if (hit.collider.CompareTag("Player") && range <= ViewRange)
+            if (hit.collider.CompareTag("Player"))
             {
-                canSee = true;
+                
                 Target();
-                Debug.DrawLine(transform.position, playerPos.position);
+
+            }
+            else if (!hit.collider.CompareTag("Player") || hit.collider == null)
+            {
+
+                Patrol();
             }
            
             
         }
-        else
-        {
-            canSee = false;
-            Patrol();
-        }
+        Debug.DrawLine(transform.position, playerPos.position);
 
-        
 
-        
-        distToPlayer.text = "Player: " + range +"\n"+ "Can See: " + canSee;
+
+
+
+        distToPlayer.text = "Player: " + range + "\n" + "Can See: " + hit.collider.tag;
 
         distanceText.text = "Distance: " + _navMesh.remainingDistance.ToString();
 
 
-        
-        
-        
-        
-        
-
-
-        
-
-        
         // If the Agent is moving - play the particle system
         if (!_navMesh.isStopped)
         {
@@ -111,19 +103,21 @@ public class EnemyTank : MonoBehaviour
         emit.rateOverDistance = _navMesh.speed * particleRate;
     }
 
+
     private void Patrol()
     {
         // This function can be called every frame to set the unit to loop thru 
         // its waypoints
         
         _navMesh.isStopped = false;
+
         
         if (_navMesh.remainingDistance < 1f)
         {
             
             _currentWP = (_currentWP + 1) % _waypoints.Length;
             _navMesh.SetDestination(_waypoints[_currentWP].transform.position);
-            Debug.Log("Stopped:" + _navMesh.isStopped);
+
             
         }
     }
@@ -132,6 +126,7 @@ public class EnemyTank : MonoBehaviour
     {
         // If the player object is near - stop navigation and rotate toawrds the player
         _navMesh.isStopped = true;
+
         transform.LookAt(playerPos.position);
     }
 }
