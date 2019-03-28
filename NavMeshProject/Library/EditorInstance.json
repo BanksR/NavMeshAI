@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "process_id": 25350,
   "version": "2018.2.14f1",
@@ -5,4 +6,9 @@
   "app_contents_path": "/Applications/Unity/Unity.app/Contents",
   "attach_allowed": "True",
   "is_loaded_from_assets": "True"
+=======
+{
+	"process_id" : 61040,
+	"version" : "2018.2.1f1"
+>>>>>>> master
 }
