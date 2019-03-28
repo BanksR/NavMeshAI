@@ -5,10 +5,16 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="EnemyTank.cs" t="Include" />
+        <e p="GameManager.cs" t="Include" />
+        <e p="pickUpObject.cs" t="Include" />
+        <e p="randSpawner.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="IColorable.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="Rotator.cs" t="Include" />
         </e>
+        <e p="Ufo.cs" t="Include" />
+        <e p="WallScript.cs" t="Include" />
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="NavMeshProject.sln" t="IncludeFlat" />

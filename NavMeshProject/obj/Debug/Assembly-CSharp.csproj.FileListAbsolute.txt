@@ -1,0 +1,2 @@
+/Users/Banksy/Game Dev/Unity Projects/NavMeshAI/NavMeshProject/obj/Debug/Assembly-CSharp.csprojResolveAssemblyReference.cache
+/Users/Banksy/Game Dev/Unity Projects/NavMeshAI/NavMeshProject/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
