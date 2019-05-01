@@ -4,17 +4,28 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="EnemyTank.cs" t="Include" />
-        <e p="GameManager.cs" t="Include" />
-        <e p="pickUpObject.cs" t="Include" />
-        <e p="randSpawner.cs" t="Include" />
-        <e p="Scripts" t="Include">
-          <e p="IColorable.cs" t="Include" />
-          <e p="PlayerController.cs" t="Include" />
-          <e p="Rotator.cs" t="Include" />
+        <e p="ExplosionParticleControl.cs" t="Include" />
+        <e p="NearerstStuff" t="Include">
+          <e p="pickUpObject.cs" t="Include" />
+          <e p="Ufo.cs" t="Include" />
         </e>
-        <e p="Ufo.cs" t="Include" />
-        <e p="WallScript.cs" t="Include" />
+        <e p="ParticleManager.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="EnemyFireControl.cs" t="Include" />
+          <e p="EnemyTank.cs" t="Include" />
+          <e p="FireControl.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
+          <e p="IColorable.cs" t="Include" />
+          <e p="IDamageable.cs" t="Include" />
+          <e p="PlayerController.cs" t="Include" />
+          <e p="PlayerFireControl.cs" t="Include" />
+          <e p="Projectile.cs" t="Include" />
+          <e p="randSpawner.cs" t="Include" />
+          <e p="Rotator.cs" t="Include" />
+          <e p="TankerStats.cs" t="Include" />
+          <e p="TurretControl.cs" t="Include" />
+          <e p="WallScript.cs" t="Include" />
+        </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="NavMeshProject.sln" t="IncludeFlat" />

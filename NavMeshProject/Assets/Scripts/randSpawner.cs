@@ -36,6 +36,6 @@ public class randSpawner : MonoBehaviour
 		Vector3 pos = Random.insideUnitCircle * radius;
 		Instantiate(thingToSpawn, pos, Quaternion.identity);
 		
-		GameManager.instance.AddAndResort(thingToSpawn);
+		//GameManager.instance.AddAndResort(thingToSpawn);
 	}
 }

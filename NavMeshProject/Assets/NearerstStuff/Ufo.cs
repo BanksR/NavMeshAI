@@ -9,30 +9,35 @@ using UnityEngine;
 public class Ufo : MonoBehaviour
 {
 
-	private Transform target = null;
+	private Transform target;
 	public float speed = 1f;
-	public static int targID = 0;
 
-	private int targetID = 0;
-	
-
-	private void Update()
+	private void Awake()
 	{
+		target = GameManager._pickupQ.First().transform;
+	}
 
 
-		target = GameManager.instance.SortList(this.transform.position);
+	private void LateUpdate()
+	{
+		if (Input.GetKeyDown(KeyCode.Space))
+		{
+			GameManager.instance.DeQ();
+		}
+
+		target = GameManager._pickupQ.First().transform;
+	
+		MoveToward(target.position);
 		
+		Debug.DrawLine(transform.position, target.position);
+		MoveToward(target.position);
 		
-			MoveToward(target.position);
-		
-			Debug.DrawLine(transform.position, target.position);
-			MoveToward(target.position);
-			//Debug.Log("Target is: " + target.name);
 	}
 
 	public void MoveToward(Vector3 targetPos)
 	{
-		Vector3 newPso = Vector3.MoveTowards(transform.position, targetPos, speed);
-		transform.position = newPso;
+		Vector3 newPos = Vector3.MoveTowards(transform.position, targetPos, speed);
+		
+		transform.position = newPos;
 	}
 }

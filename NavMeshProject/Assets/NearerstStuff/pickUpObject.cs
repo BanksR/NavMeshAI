@@ -8,19 +8,22 @@ public class pickUpObject : MonoBehaviour
 
 	void Awake()
 	{
-		GameManager._pickUpObjects.Add(this);
+
+		GameManager._pickupQ.Enqueue(this);
 	}
+	
+	
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.gameObject.CompareTag("UFO"))
 		{
-			//Ufo.targID++;
-			GameManager.instance.RemoveAndResort(this);
+			
+			//GameManager.instance.DeQ();
+			
 			this.gameObject.SetActive(false);
 			
-			
-			GameManager.instance.ParticleSpawner(particles, this.transform.position);
+			//GameManager.instance.ParticleSpawner(particles, this.transform.position);
 		}
 	}
 }
