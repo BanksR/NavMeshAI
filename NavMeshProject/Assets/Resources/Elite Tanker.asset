@@ -14,5 +14,7 @@ MonoBehaviour:
   tankerName: Derpert Von Derpenstein
   maxHp: 500
   weaponDmg: 50
+  fireRate: 1.5
+  tankMaterial: {fileID: 2100000, guid: a02fa274ccfdace4493b52b3e8f4c85f, type: 2}
   speedMulti: 1.6
   skinColor: {r: 0.5566038, g: 0.4452867, b: 0.21791562, a: 0}

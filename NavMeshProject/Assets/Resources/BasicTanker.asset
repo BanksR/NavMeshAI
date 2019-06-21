@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: BasicTanker
   m_EditorClassIdentifier: 
   tankerName: Basic
-  maxHp: 100
+  maxHp: 200
   weaponDmg: 4
+  fireRate: 6
+  tankMaterial: {fileID: 2100000, guid: 757fc96b546b144d390fe5ece00e56cb, type: 2}
   speedMulti: 0.6
   skinColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0}

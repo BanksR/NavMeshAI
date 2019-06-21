@@ -13,6 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tankerName: Banks
   maxHp: 500
-  weaponDmg: 50
+  weaponDmg: 100
+  fireRate: 3
+  tankMaterial: {fileID: 2100000, guid: f7ff1aa7927db64448a8bbd41e19a020, type: 2}
   speedMulti: 2
   skinColor: {r: 0.378471, g: 0.5943396, b: 0.388442, a: 0}

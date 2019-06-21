@@ -16,8 +16,9 @@ public class EnemyFireControl : FireControl
 		_enemyTank = GetComponent<EnemyTank>();
 		//Projectile proj = projectile.GetComponent<Projectile>();
 		ShootDamage = _enemyTank._stats.weaponDmg;
+		 FireRate = _enemyTank._stats.fireRate;
 
-	}
+	 }
 
 
 	private void Update()

@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Name: MediumTanker
   m_EditorClassIdentifier: 
   tankerName: Medium
-  maxHp: 200
+  maxHp: 250
   weaponDmg: 7
+  fireRate: 3
+  tankMaterial: {fileID: 2100000, guid: 757fc96b546b144d390fe5ece00e56cb, type: 2}
   speedMulti: 1
   skinColor: {r: 0.378471, g: 0.5943396, b: 0.388442, a: 0}

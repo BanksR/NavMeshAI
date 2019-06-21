@@ -17,6 +17,9 @@ public class EnemyTank : MonoBehaviour, IDamageable
     public Text nameText;
     public Slider HP;
     public Slider cooldown;
+
+    private MeshRenderer[] _meshParts;
+    
     
     
     [Header ("Nav Mesh")]
@@ -59,7 +62,14 @@ public class EnemyTank : MonoBehaviour, IDamageable
     {
         // Filling our variables with component refernces
         _navMesh = GetComponent<NavMeshAgent>();
-        _mat.color = _stats.skinColor;
+
+        _meshParts = GetComponentsInChildren<MeshRenderer>();
+        foreach (var _mesh in _meshParts)
+        {
+            _mesh.material = _stats.tankMaterial;
+        }
+        
+        
         _waypoints = GameObject.FindGameObjectsWithTag("Waypoint");
         canSee = false;
 

@@ -13,6 +13,10 @@ public class TankerStats : ScriptableObject
 	public float maxHp = 10f;
 	public int weaponDmg = 5;
 
+	public float fireRate = 3f;
+
+	public Material tankMaterial;
+	
 	public float speedMulti = 1f;
 
 	public Color skinColor;

@@ -9,7 +9,17 @@ public class FireControl : MonoBehaviour
     
     public Transform LaunchPos;
 
-    public float fireRate = 3f;
+
+    private float _fireRate = 3f;
+
+
+    public float FireRate
+    {
+        get { return _fireRate; }
+        
+        set { _fireRate = value; }
+    }
+    
     public Slider coolDown;
 
     public bool canShoot = true;
@@ -44,11 +54,11 @@ public class FireControl : MonoBehaviour
             p.Play();
         }
 
-        while (t < fireRate)
+        while (t < _fireRate)
         {
             canShoot = false;
             t += Time.fixedDeltaTime;
-            coolDown.value = t / fireRate;
+            coolDown.value = t / _fireRate;
             
             yield return new WaitForEndOfFrame();
         }
